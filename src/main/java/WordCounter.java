@@ -15,24 +15,24 @@ public class WordCounter {
 	private HashMap<String, String> lan_en = new HashMap<>();
 
 	public WordCounter(String urlStr) {
-		lan_chi.put("BLUETOOTH", "藍芽");
-		lan_chi.put("WIRELESS", "無線");
-		lan_chi.put("WIRED", "有線");
-		lan_chi.put("OPTICAL", "光學");
-		lan_chi.put("RECHARGEABLE", "充電");
-		lan_chi.put("POWERPLAY", "強力播放");
-		lan_chi.put("ALKALINE", "鹼性電池");
-		lan_chi.put("LIGHTSYNC", "光同步");
-		lan_chi.put("LASER", "雷射");
-		lan_en.put("藍芽", "BLUETOOTH");
-		lan_en.put("無線", "WIRELESS");
-		lan_en.put("有線", "WIRED");
-		lan_en.put("光學", "OPTICAL");
-		lan_en.put("充電", "RECHARGEABLE");
-		lan_en.put("強力播放", "POWERPLAY");
-		lan_en.put("鹼性電池", "ALKALINE");
-		lan_en.put("光同步", "LIGHTSYNC");
-		lan_en.put("雷射", "LASER");
+//		lan_chi.put("BLUETOOTH", "藍芽");
+//		lan_chi.put("WIRELESS", "無線");
+//		lan_chi.put("WIRED", "有線");
+//		lan_chi.put("OPTICAL", "光學");
+//		lan_chi.put("RECHARGEABLE", "充電");
+//		lan_chi.put("POWERPLAY", "強力播放");
+//		lan_chi.put("ALKALINE", "鹼性電池");
+//		lan_chi.put("LIGHTSYNC", "光同步");
+//		lan_chi.put("LASER", "雷射");
+//		lan_en.put("藍芽", "BLUETOOTH");
+//		lan_en.put("無線", "WIRELESS");
+//		lan_en.put("有線", "WIRED");
+//		lan_en.put("光學", "OPTICAL");
+//		lan_en.put("充電", "RECHARGEABLE");
+//		lan_en.put("強力播放", "POWERPLAY");
+//		lan_en.put("鹼性電池", "ALKALINE");
+//		lan_en.put("光同步", "LIGHTSYNC");
+//		lan_en.put("雷射", "LASER");
 		this.urlStr = urlStr;
 	}
 

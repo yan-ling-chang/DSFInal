@@ -30,13 +30,93 @@ System.out.println(dataPoints);
 <html>
 <head>
 <style>
+
+body
+{
+	font:'Montserrat', sans-serif;
+	display: flex;
+	flex-direction: column;
+	background-color:  #888c91;
+}
+h2
+{
+    
+    text-align: center;
+}
+img
+{
+	border-radius: 50%;
+	position:absolute;
+	display: block;
+    display:  flex;
+    align-items: center;
+    justify-content:  center;
+}
+h1
+{
+  color: white;
+  font-size: 10vw;
+  text-shadow: 4px 4px 0px #3F7FBF;
+  mix-blend-mode: screen;
+  animation: fadeIn 2.5s linear forwards;
+  text-align: center;
+}
+.container
+{
+  background-color: white;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+input[type=text]
+{
+  width:500px;
+  height:40px;
+  /* transition: width 0.4s ease-in-out; */
+  padding:5px 15px; background:#ccc; border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 30px; 
+}
+.keyword
+{
+  position:absolute;
+  left:35%;
+  top:60%;
+  margin-top:-50px;
+}
+.brand
+{
+  position:absolute;
+  left:35%;
+  top:50%;
+  margin-top:-50px;
+}
+input[type=text]:focus {
+  width: 60%;
+}
+
+
 a {
-    color:green;
+    color:white;
+    font-weight:600;
+    text-decoration: none;
 }
 input[type=button], input[type=submit]{
   background-color: #96a9e3;
-  border: no
-  ne;
+  border: none;
   color: white;
   padding: 16px 32px;
   text-decoration: none;
@@ -81,7 +161,7 @@ chart.render();
 </script>
 </head>
 <body style="background-color:style=background-color:powderblue;">
-<img alt="Mouse" src="icon.jpeg" width="120" height="120">
+<!-- <img alt="Mouse" src="icon.jpeg" width="120" height="120"> -->
 <div class="container"></div><h1>Mouse Engine</h1>
 <form action='TestProject' method='get'>
 <div class='brand'><input type='text' name='Brand' placeholder = 'Brand'/></div>
@@ -93,7 +173,7 @@ chart.render();
 <%for (String key : sort_map.keySet()) {%>
 <%if(unsort_map.get(key) > 0){ %>
 <h2 align="center">
-	<h2> Web site :<a href='<%=key.toString()%>'><%out.println(getTitle(key.toString())); %></a><br>Value :<%out.println(unsort_map.get(key)); %><br></h2>
+	<h2 > <a href='<%=key.toString()%>'><%out.println(getTitle(key.toString())); %></a></h2>
 	<%}%>
 <%
 }

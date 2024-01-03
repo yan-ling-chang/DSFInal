@@ -9,7 +9,9 @@ body
 }
 input[type=text]
 {
-  width:500px;
+  margin: 0 auto;
+  item-align: center;
+  width:800px;
   height:40px;
   transition: width 0.4s ease-in-out;
   padding:5px 15px; background:#ccc; border:0 none;
@@ -20,7 +22,7 @@ input[type=text]
 .keyword
 {
   position:absolute;
-  left:30%;
+  left:50%;
   top:60%;
   margin-top:-50px;
   margin-left:-50px;
@@ -28,14 +30,14 @@ input[type=text]
 .brand
 {
   position:absolute;
-  left:30%;
+  left:50%;
   top:50%;
   margin-top:-50px;
   margin-left:-50px;
 }
-input[type=text]:focus {
+/*input[type=text]:focus {
   width: 60%;
-}
+}*/
 h1
 {
 	color: white;
